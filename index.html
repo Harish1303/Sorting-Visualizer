@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+  <title>Visualize Sorting!</title>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Sorting Visualizer</h1>
+      <p class="lead">
+        This is a tool that helps you visualize and understand sorting
+        algorithms!
+      </p>
+    </div>
+    <div class="btnsgroup">
+      <div>
+
+      </div>
+      <div></div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+</head>
+
+<body>
+  <section class="sec">
+    <div class="arrayinputs">
+      <h5>Size of arrays</h5>
+      <input id="arraysize" type="range" min="10" max="150" step="1" value="100" />
+      <h5>Speed</h5>
+      <input id="arrayspeed" type="range" min=1 max=5 step=1 value=3 />
+    </div>
+
+    <div class="cont1a" id="cont1"></div>
+
+    <div id="Info_Cont2" class="algobuttons">
+      <button class="sortbuttons btn-lg" id="lol" style=" display:block;padding: 20px; text-align: center; "
+        onclick="newarray()" id="genarr">
+        <h4>Generate a new array!</h4>
+      </button>
+      <button class="sortbuttons btn-lg" style=" display:block;padding: 20px; text-align: center; "
+        onclick="bublesort()">
+        <h5>Bubble Sort</h5>
+      </button>
+      <button class="sortbuttons btn-lg" id="lol" style=" display:block;padding: 20px; text-align: center; "
+        onclick="selectionsort()">
+        <h5>Selection Sort</h5>
+      </button>
+      <button class="sortbuttons btn-lg" style=" display:block;padding: 20px; text-align: center; "
+        onclick="insertionsort()">
+        <h5>Insertion Sort</h5>
+      </button>
+      <button class="sortbuttons btn-lg" style="display:block;padding: 20px; text-align: center; "
+        onclick="quicksorter()">
+        <h5>Quick Sort</h5>
+      </button>
+      <button class="sortbuttons btn-lg" style=" display:block;padding: 20px; text-align: center; "
+        onclick="heapsorter()">
+        <h5>Heap Sort</h5>
+      </button>
+      <button class="sortbuttons btn-lg" style=" display:block;padding: 20px; text-align: center; "
+        onclick="mergesorter()">
+        <h5>Merge Sort</h5>
+      </button>
+    </div>
+  </section>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/visualizations.js"></script>
+  <script src="./scripts/bubblesort.js"></script>
+  <script src="./scripts/selectionsort.js"></script>
+  <script src="./scripts/insertionsort.js"></script>
+  <script src="./scripts/mergesort.js"></script>
+  <script src="./scripts/quicksort.js"></script>
+  <script src="./scripts/heapsort.js"></script>
+
+</body>
+<footer class="page-footer font-small unique-color-dark pt-4">
+  <div class="container" style=" background-color:#eaf0e6;">
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1"> </h5>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+</html>

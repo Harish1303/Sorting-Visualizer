@@ -1,0 +1,48 @@
+.cont1a {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  }
+.sec {
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+  background-color:#eaf0e6;
+}
+.sortbuttons {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  
+}
+.lead {
+  font-family: 'Roboto Slab', serif;
+  font-size: x-large;
+}
+
+.display-4 {
+  font-family: 'Patua One', cursive;
+  
+}
+.jumbotron {
+  margin-bottom: 0%;
+  background-color:#c7eef5;
+}
+.arrayinputs {
+  place-content: center;
+  padding: 5% 5%;
+  margin-left: 2%;
+
+}
+
+
+.btnsgroup {
+  display:grid;
+  display: flex;
+  grid-template-columns: 10% 20% 60%;
+  height:0px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page-footer {
+  background-color:#eaf0e6;
+}
